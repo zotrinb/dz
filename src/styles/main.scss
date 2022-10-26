@@ -239,9 +239,14 @@ li {
 
     &__content {
 
-        &__img img {
-            max-width: 100%;
-            display: block;
+        &__img {
+            position: relative;
+
+            img {
+                max-width: 100%;
+                display: block;
+            }
+
         }
 
         .hero__ul {
@@ -277,6 +282,31 @@ li {
     }
 }
 
+.hero__img__pos {
+    position: absolute;
+    transform: translate(-50%, -50%);
+
+    &_1 {
+        top: 10%;
+        right: -29%;
+    }
+
+    &_2 {
+        top: 34%;
+        left: 16%;
+    }
+
+    &_3 {
+        top: 14%;
+        left: 32%;
+    }
+
+    &_4 {
+        right: -17%;
+        top: 120%;
+    }
+}
+
 /* process */
 
 .process {
@@ -307,6 +337,7 @@ li {
     &__blocks {
         padding-top: 51px;
         align-items: start;
+        justify-content: space-between;
     }
 
 
@@ -577,7 +608,7 @@ li {
             line-height: 24px;
             margin: 12px 0 0 6px;
 
-            &::before{
+            &::before {
                 content: url('/assets/images/placeholder.svg');
                 top: 3px;
                 right: 8px;
@@ -588,7 +619,7 @@ li {
     }
 }
 
-.networks--flex{
+.networks--flex {
     margin-top: 29px;
     max-width: 193px;
     justify-content: space-between;
