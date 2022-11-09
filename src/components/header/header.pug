@@ -2,7 +2,7 @@ header.header
     .header__items
         .header__logo
             img(src='assets/images/Logo.svg')
-        .burger.flex
+        .burger.burger--none.flex
             .burger__line    
             .burger__line    
             .burger__line
@@ -21,7 +21,7 @@ header.header
                 a(href='tel:+78125092198') +7 (812) <b>509 21 98</b>                
             .contacts__text 
                 a(href='#') Перезвоните мне  
-        .networks.flex
+        .networks.networks--header.flex
             .networks__item
                 img(src='assets/images/vk.svg' alt='vkontakte')         
             .networks__item
@@ -36,7 +36,35 @@ header.header
             .interacts__item 
                 img(src='assets/images/like.svg' alt='like')                
             .interacts__item 
-                img(src='assets/images/cart.svg' alt='cart')                
+                img(src='assets/images/cart.svg' alt='cart') 
+        .burger.flex.hidden
+            .burger__line    
+            .burger__line    
+            .burger__line       
+            nav.nav
+            ul.nav__ul.flex 
+               li.nav__li 
+                    a(href='#') Каталог товаров         
+               li.nav__li 
+                    a(href='#') Доставка и оплата         
+               li.nav__li 
+                    a(href='#') Цены          
+               li.nav__li 
+                    a(href='#') Контакты
+            .contacts.flex 
+                .contacts__num  
+                    a(href='tel:+78125092198') +7 (812) <b>509 21 98</b>                
+                .contacts__text 
+                    a(href='#') Перезвоните мне  
+            .networks.flex.networks--header
+                .networks__item
+                    img(src='assets/images/vk.svg' alt='vkontakte')         
+                .networks__item
+                    img(src='assets/images/tg.svg' alt='telegram')         
+                .networks__item
+                    img(src='assets/images/ig.svg' alt='instagram')         
+                .networks__item
+                    img(src='assets/images/whatsapp.svg' alt='whatsapp')              
 section.hero
     .container 
         .hero__items 
